@@ -6,7 +6,7 @@ public class TouchInput : MonoBehaviour
 {
     Touch touch;
     
-    private float startTapX, startTapY, startTemp;
+    private float startTapX, startTapY;
 
     void Update()
     {
@@ -30,8 +30,7 @@ public class TouchInput : MonoBehaviour
             // Повышенная сложность. Если движение идет влево, то считать это первоначальными координатами
             if (touch.deltaPosition.x < 0)
             {
-                startTapX = touch.position.x;
-                Debug.Log("Новое начало");
+                startTapX = touch.position.x;                
             }   
         }
     }

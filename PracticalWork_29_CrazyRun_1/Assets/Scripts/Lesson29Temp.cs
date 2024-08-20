@@ -19,6 +19,8 @@ public class Lesson29Temp : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
+            //touch = Input.GetTouch(0);
+
             //force = new Vector3(touch.position.x, 0, touch.position.y);
 
             //rb.AddForce(force * speed);
